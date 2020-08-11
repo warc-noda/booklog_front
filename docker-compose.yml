@@ -1,0 +1,11 @@
+version: '3'
+services:
+  front:
+    container_name: booklog_front
+    build: .
+    volumes:
+      - .:/app
+    ports:
+      - 5000:3000
+    # この記述じゃないとnode-sassでエラーが出てしまう
+    command: /bin/ash -c "rm -rf package-lock.json && npm install && npm rebuild node-sass && npm run dev"

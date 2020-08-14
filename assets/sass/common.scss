@@ -1,3 +1,74 @@
 body {
-  background-color: $color-bg;
+  color: #262626;
+  padding: 0;
+  margin: 0;
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    margin: 0;
+    padding: 0;
+  }
+
+  h1 {
+    margin: 0;
+    padding: 0;
+  }
+
+  div {
+    margin: 0;
+    padding: 0;
+  }
+
+  form {
+    border-radius: 2px;
+  }
+
+  input {
+    appearance: none;
+    border: 1px solid #000;
+    border-radius: 2px;
+    outline: none;
+    background: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  button {
+    appearance: none;
+    border-radius: 2px;
+    margin: 0;
+    padding: 0;
+  }
+
+  hr {
+    margin: 0;
+    padding: 0;
+  }
+
+  .input {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding: 10px 5px;
+  }
+
+  .button {
+    cursor: pointer;
+    box-sizing: border-box;
+    width: 100%;
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 10px 5px;
+
+    &--default {
+      background: $color-main;
+      color: #fff;
+      font-weight: bold;
+    }
+  }
 }
